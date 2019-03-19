@@ -1,0 +1,21 @@
+.hero-text {
+    width: 400px;
+    font-size:25px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+   h1 {
+    color:orangered;
+   }
+
+   @include atSmall {
+    font-size: 30px;
+    width:1040px;
+    h1 {
+        color: blue;;
+   }
+}
+}
