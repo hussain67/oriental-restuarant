@@ -79,12 +79,12 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
 
-        /* new CopyWebpackPlugin([
+     new CopyWebpackPlugin([
             {
                 from:'src/images',to:'images',
             } 
         ]), 
-        new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }) */
+        new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }) 
     ],
 
     optimization: {
