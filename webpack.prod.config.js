@@ -12,12 +12,12 @@ module.exports = {
     entry: ['@babel/polyfill', './src/scripts/index.js'],
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './docs'),
         publicPath: ''
     },
 
     devServer: {
-        contentBase: path.resolve(__dirname, './dist'),
+        contentBase: path.resolve(__dirname, './docs'),
         index: 'index.html',
         compress: true,
         port: 9000
@@ -67,7 +67,7 @@ module.exports = {
     },
 
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['docs']),
         new HtmlWebpackPlugin({
             template: __dirname + '/src/index.html',
             filename: 'index.html',
