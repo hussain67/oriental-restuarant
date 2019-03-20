@@ -39,7 +39,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
-                loader: 'url-loader?limit=8000&name=images/[name].[ext]'
+                loader: 'url-loader?limit=10&name=images/[name].[ext]'
             }
         ]
     },
@@ -52,7 +52,7 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
-        new CopyWebpackPlugin([
+       new CopyWebpackPlugin([
             {
                 from:'src/images',to:'images'
             } 

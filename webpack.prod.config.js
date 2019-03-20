@@ -13,6 +13,7 @@ module.exports = {
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, './docs'),
+       
         publicPath: ''
     },
 
@@ -43,7 +44,8 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif)$/,
+
                 use: [{
                         loader: 'url-loader',
                         options: {
@@ -78,12 +80,12 @@ module.exports = {
             filename: '[name].[contenthash].css',
             chunkFilename: "[id].css"
         }),
-
+/*
      new CopyWebpackPlugin([
             {
                 from:'src/images',to:'images',
             } 
-        ]), 
+        ]),  */
         new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }) 
     ],
 
