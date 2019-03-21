@@ -1,5 +1,5 @@
 .hero-text {
-    width: 400px;
+    max-width: 400px;
     font-size:25px;
     font-weight: 300;
     position: absolute;
@@ -13,7 +13,7 @@
 
    @include atSmall {
     font-size: 30px;
-    width:1040px;
+    max-width:1040px;
     h1 {
         color: blue;;
    }
